@@ -1,0 +1,17 @@
+18.23
+
+install tailwind
+$$
+yarn add --dev tailwindcss postcss autoprefixer
+yarn tailwindcss init -p
+$$
+info https://tailwindcss.com/docs/installation
+
+to host web with IPFS
+$$ 
+yarn build
+yarn next export
+$$ 
+
+use fleek to deploy web automaticlly 
+
