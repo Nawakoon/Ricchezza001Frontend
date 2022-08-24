@@ -7,6 +7,9 @@ yarn
 yarn dev
 ```
 
+or if you have IPFS installed, go to
+https://ipfs.io/ipfs/QmfUmcvFqeP7tropKnPbxcupue1gpSYQh2YUVWfuMGVmqw
+
 user can mint the NFT by
 - faucet LINK token from
 https://faucets.chain.link/rinkeby
