@@ -1,10 +1,10 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Header from "../components/Header";
-import MintNFT from "../components/mintNFT";
-// import burnNFT from "../components/burnNFT.js";
 import { useMoralis } from "react-moralis";
-import BurnNFT from "../components/burnNFT";
+import BurnBotton from "../components/burnBotton";
+import MintNFT from "../components/mintBotton";
+import ApproveLink from "../components/approveBotton";
 
 const supportedChains = ["31337", "4"];
 
@@ -23,7 +23,19 @@ export default function Home() {
         <div>
           {supportedChains.includes(parseInt(chainId).toString()) ? (
             <div className="flex flex-row">
+              <h1 className="py-5 px-4">
+                <div className="font-bold text-2xl">Ricchezza Sword 001</div>
+                <div>mint price: 5 LINK</div>
+              </h1>
+              <ApproveLink />
               <MintNFT />
+              <input 
+                className="bg-blue-100 rounded"
+                type="text" 
+                id="ricchezzaId"
+              >                         
+              </input>              
+              <BurnBotton />
             </div>
           ) : (
             <div>{`Please switch to a supported chainId. The supported Chain Ids are: ${supportedChains}`}</div>
